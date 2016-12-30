@@ -1,0 +1,31 @@
+{  
+   "name":"salaryInfo",
+   "children":[  
+        {
+            "label": "Industry Type", "id": 1000,
+            "children": [
+                { "label": "Advertising", "id": 1001 },
+                { "label": "Aeronautics", "id": 1002 },
+                { "label": "Agriculture and Fishing", "id": 1003 },
+                { "label": "Automotive Engineering", "id": 1004 },
+                { "label": "Bio-Technology", "id": 1005 },
+                { "label": "Construction", "id": 1006 },
+                { "label": "Education", "id": 1007 },
+                { "label": "Engineering", "id": 1008 },
+                { "label": "Food Services", "id": 1009 },
+                { "label": "Government", "id": 1010 },
+                { "label": "Healthcare", "id": 1011 },
+                { "label": "Hospitality", "id": 1012 },
+                { "label": "Information Technology", "id": 1013 },
+                { "label": "Insurance", "id": 1014 },
+                { "label": "Personal Services", "id": 1015 },
+                { "label": "Real Estate", "id": 1016 },
+                { "label": "Retail", "id": 1017 },
+                { "label": "Security", "id": 1018 },
+                { "label": "Technology", "id": 1019 },
+                { "label": "Telecommunications", "id": 1020 },
+                { "label": "Transportation", "id": 1021 }
+            ]
+        }
+    ]
+}

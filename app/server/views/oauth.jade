@@ -1,0 +1,41 @@
+html
+    head
+       meta(name='viewport', content='width=device-width,user-scalable=yes')
+       link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+       link(rel='stylesheet', href='css/style.css', type="text/css")
+       title Welcome to CliqueLearn Open Resources
+    body
+      block scripts
+         script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+         script(src='vendor/bootstrap-modal.js')
+         script(src='vendor/bootstrap-transition.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js')
+         script(src='js/views/libserviceAdmin.js')
+
+        #panel-container
+            #account-form.form-horizontal.well.span9
+               h3 CliqueLearn Student Free-Access Login   
+               br
+               p Login through social networking sites by clicking on one of the following icons.
+               div(style='text-align: center;')
+                    a(href='/auth/google', target='_blank')#googlesign
+                                img(src='images/googlelogin.png', height='25px', width='185px', border='3')
+                    |&nbsp;      
+                    a(href='/auth/windowslive', target='_blank')#livesign
+                                img(src='images/NewMicrosoft.png', height='25px', width='185px',  border='3')
+                    br
+                    br
+                    a(href='/auth/facebook', target='_blank')#facebooksign
+                                img(src='images/facebooklogin.png', height='25px', width='185px', border='3')
+                    |&nbsp;&nbsp;
+                    a(href='/auth/linkedIn', target='_blank')#linkedInsign
+                                img(src='images/NewSignLinkedIn.png', height='25px', width='185px',  border='3')
+                    br
+                    br
+                    a(href='/auth/yahoo', target='_blank')#yahoosign
+                                img(src='images/yahoo.png', height='25px', width='185px', border='3')
+                    |&nbsp;&nbsp;
+                    a(href='/auth/twitter', target='_blank')#twittersign
+                                img(src='images/twitter.png', height='25px', width='185px',  border='3')

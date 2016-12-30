@@ -1,0 +1,1 @@
+module.exports=function(a){var b=new a.Schema({name:String,email:String,contactno:Number,country:String,board:String,standard:String,approvalStatus:Number,doc1:String,doc2:String});this.model=a.model("Registration",b);return this};

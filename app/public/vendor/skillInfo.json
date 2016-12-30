@@ -1,0 +1,216 @@
+{  
+   "name":"skillInfo",
+   "children":[  
+        {
+            "label": "Accounting", "id": 1000,
+            "children": [                
+                { "label": "Accountancy", "id": 1001},
+                { "label": "Cost Accountancy", "id": 1002},
+                { "label": "Chartered Accountancy", "id": 1003}
+            ]
+        },
+        {
+            "label": "Administration", "id": 2000,
+            "children": [
+                { "label": "Facility Administration", "id": 2010 },
+                { "label": "System Administration", "id": 2020 },
+                { "label": "Network Administration", "id": 2030 },
+                { "label": "Database Administration", "id": 2040 },
+                { "label": "ClearCase Administration", "id": 2050 }
+            ]
+        },
+        {
+            "label": "Art/Design", "id": 3000,
+            "children": [
+                { "label": "Logo Design", "id": 3010 },
+                { "label": "Advertising", "id": 3020 }
+            ]
+        },
+        {
+            "label": "Engineering Design", "id": 4000,
+            "children": [
+                { "label": "Mechanical Engg Design","id": 4010 },
+                { "label": "Electrical Engg Design","id": 4020 },
+                { "label": "Building Architecture", "id": 4030 },
+                { "label": "Chemical Engineering", "id": 4040 },
+                { "label": "Ceramic Engineering", "id": 4050 },
+                { "label": "Mining Engineering", "id": 4060 },
+                { "label": "Industrial Process", "id": 4070 },
+                { "label": "Electronic Design", "id": 4080 },
+                { "label": "Non Conventional Energy", "id": 4090 }
+            ]
+        },
+        {
+            "label": "Marketing Management", "id": 5000,
+            "children": [
+                { "label": "Sales Management", "id": 5010 },
+                { "label": "Business Development", "id": 5020 },
+                { "label": "Marketing Management","id": 5030 },
+                { "label": "Digital Marketing","id": 5040 }
+            ]
+        },
+        {
+            "label": "Programming", "id": 6000,
+            "children": [  
+                { "label": "Active Directory", "id": 6010},
+                { "label": "Android SDK", "id": 6020},
+                { "label": "Angular.js", "id": 6030 },
+                { "label": "Ajax", "id": 6040 },
+                { "label": "ASP/ASP.NET", "id": 6050 },
+                { "label": "AWT", "id": 6060 },
+                { "label": "Bootstrap", "id": 6070 },
+                { "label": "BI", "id": 6080 },
+                { "label": "C", "id": 6090 },
+                { "label": "C++", "id": 6100 },
+                { "label": "C#", "id": 6110 },
+                { "label": "CICS", "id": 6120 },
+                { "label": "COBOL", "id": 6130 },
+                { "label": "Django", "id": 6140 },   
+                { "label": "DreamWeaver", "id": 6150 },  
+                { "label": "Drupal", "id": 6160 },
+                { "label": "EDA", "id": 6170 },
+                { "label": "ETL", "id": 6180 },
+                { "label": "Flex", "id": 6190 },
+                { "label": "Groovy in Grails", "id": 6200 },
+                { "label": "HADOOP", "id": 6210 },
+                { "label": "Hibernate", "id": 6220 },
+                { "label": "HTML5", "id": 6230 },
+                { "label": "Illustrator", "id": 6240 },
+                { "label": "Informatica", "id": 6250 },
+                { "label": "IOS", "id": 6260 },
+                { "label": "Java (Core)", "id": 6270 },
+                { "label": "Java Spring", "id": 6280 },
+                { "label": "Java Struts", "id": 6290 },
+                { "label": "Java Servlets", "id": 6300 },
+                { "label": "Javascript/JQuery", "id": 6310 },
+                { "label": "JBoss", "id": 6320 },
+                { "label": "Jenkins", "id": 6330 },
+                { "label": "J2EE", "id": 6340 },
+                { "label": "JNI", "id": 6350 },
+                { "label": "Joomla", "id": 6360 },
+                { "label": "LAMP Stack", "id": 6370 },
+                { "label": "LEX", "id": 6380 },
+                { "label": "Linux shell script", "id": 6390 },
+                { "label": "Linux kernel", "id": 6400 },
+                { "label": "LISP", "id": 6410 },
+                { "label": "Matlab", "id": 6420 },
+                { "label": "Mathematica", "id": 6430 },
+                { "label": "MEAN Stack", "id": 6440 },
+                { "label": "MongoDB", "id": 6450 },
+                { "label": "MVC", "id": 6460 },
+                { "label": "Node.js", "id": 6470 },
+                { "label": "NOSQL", "id": 6480 },
+                { "label": "Oracle", "id": 6490 },
+                { "label": "Perl", "id": 6500 },
+                { "label": "Photoshop", "id": 6510 },
+                { "label": "PHP", "id": 6520 },
+                { "label": "Python", "id": 6530 },
+                { "label": "Ruby", "id": 6540 },
+                { "label": "Ruby in Rails", "id": 6550 },
+                { "label": "Salesforce", "id": 6560 },
+                { "label": "SAP/ABAP", "id": 6570 },
+                { "label": "Scala", "id": 6580 },
+                { "label": "Sharepoint", "id": 6590 },
+                { "label": "Software Architecture", "id": 6600 },
+                { "label": "SQL", "id": 6610 },
+                { "label": "SQLite", "id": 6620 },
+                { "label": "Visual Basic.NET", "id": 6630 },
+                { "label": "Visual C++.NET", "id": 6640 },
+                { "label": "Visual C#.NET", "id": 6650 },
+                { "label": "Visual J#.NET", "id": 6660 },
+                { "label": "VAX/VMS", "id": 6670 },
+                { "label": "VLSI", "id": 6680 },
+                { "label": "VMWare", "id": 6690 },
+                { "label": "WebSphere", "id": 6700 },
+                { "label": "WCF", "id": 6710 },
+                { "label": "WPF", "id": 6720 },
+                { "label": "XML", "id": 6730 },
+                { "label": "YACC", "id": 6740 }
+            ]
+        },
+        {
+            "label": "Project/Product Management", "id": 7000,
+            "children": [
+                { "label": "Project Management", "id": 7010 },
+                { "label": "Product Development Management", "id": 7020 },
+                { "label": "Product Ownership","id": 7030 },
+                { "label": "Program Management", "id": 7040 },
+                { "label": "Quality Management", "id": 7050 },
+                { "label": "Process Management", "id": 7060 },
+                { "label": "Service Delivery Management", "id": 7070 },
+                { "label": "ITIL", "id": 7080 }
+            ]
+        },
+        {
+            "label": "Research", "id": 8000,
+            "children": [                
+                { "label": "Technology Research", "id": 8010},
+                { "label": "Industrial Research", "id": 8020},
+                { "label": "Academic Research", "id": 8030},
+                { "label": "Marketing Research", "id": 8040},
+                { "label": "Business Research", "id": 8050}
+            ]
+        },
+        {
+            "label": "Teaching", "id": 9000,
+            "children": [                
+                { "label": "Teaching", "id": 9010},
+                { "label": "Teaching Assistant", "id": 9020}
+           ]
+        },
+        {
+            "label": "Technology", "id": 10000,
+            "children": [
+                { "label": "Analytics", "id": 10010 },
+                { "label": "Big Data", "id": 10020 }, 
+                { "label": "Compiler Development", "id": 10030 },
+                { "label": "Cloud Computing(SAS/PAAS/IAAS)", "id": 10040 },
+                { "label": "Digital Signal Processing", "id": 10050 },
+                { "label": "Data/Information Security","id": 10060 },
+                { "label": "eCommerce", "id": 10070 },
+                { "label": "Game Design", "id": 10080 },
+                { "label": "Image Processing", "id": 10090 },
+                { "label": "Information Fusion", "id": 10100 },
+                { "label": "Internet of Things(IOT)", "id": 10110 },                
+                { "label": "Knowledge Retrieval", "id": 10120 },
+                { "label": "Machine Learning", "id": 10130 },
+                { "label": "Mobile Programming", "id": 10140 },
+                { "label": "Networking", "id": 10150 },
+                { "label": "OOAD", "id": 10170 },
+                { "label": "Operating System", "id": 10180 },
+                { "label": "Product Security","id": 10190 },
+                { "label": "Rich Internet Programming", "id": 10200 },
+                { "label": "Search Engine Optimization", "id": 10210 },
+                { "label": "Storage Technology", "id": 10220 },
+                { "label": "Telecommunication", "id": 10230 },
+                { "label": "UX Design", "id": 10240 },
+                { "label": "Test Automation", "id": 10250 }
+            ]
+        },
+        {
+            "label": "Testing/Verification", "id": 11000,
+            "children": [
+                { "label": "Black Box Testing", "id": 11010 },
+                { "label": "White Box Testing", "id": 11020 },
+                { "label": "User Interface Testing", "id": 11030 },
+                { "label": "Reliability Testing","id": 11040 },
+                { "label": "Security Testing","id": 11050 },
+                { "label": "Manual Testing", "id": 11060 },
+                { "label": "Unit Testing", "id": 11070 },
+                { "label": "Integration Testing", "id": 11080 },
+                { "label": "Acceptance Testing", "id": 11090 },
+                { "label": "Beta Testing", "id": 11100 },
+                { "label": "Alpha Testing", "id": 11110 }
+            ]
+        },
+        {
+            "label": "Writing", "id": 12000,
+            "children": [
+                { "label": "Article Writing", "id": 12010 },
+                { "label": "News Writing", "id": 12020 },
+                { "label": "Essay Writing","id": 12030 },
+                { "label": "Creative Writing", "id": 12040 }
+            ]
+        }
+    ]
+}

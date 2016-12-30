@@ -1,0 +1,36 @@
+{  
+   "name":"courseInfoGMAT1",
+   "children":[  
+        {
+            "label": "Quantitative", "id": 2000,
+            "children": [
+                { "label": "Arithmetic I", "id": 2010 },
+                { "label": "Arithmetic II", "id": 2020 },
+                { "label": "Algebra I", "id": 2030 },
+                { "label": "Algebra II", "id": 2040 },
+                { "label": "Probability & Statistics", "id": 2050 },
+                { "label": "Geometry", "id": 2060 }
+            ]
+        },
+        {
+            "label": "Verbal", "id": 3000,
+            "children": [
+                { "label": "Pronouns", "id": 3010 },
+                { "label": "Modifier", "id": 3020 },
+                { "label": "Sentence", "id": 3030 },
+                { "label": "Verb Tense", "id": 3040 },
+                { "label": "Parallelism", "id": 3050 },
+                { "label": "Subject Verb Agreement", "id": 3060 },
+                { "label": "Idiomatic Expressions", "id": 3070 }
+            ]
+        },
+        {
+            "label": "Tips & Tricks", "id": 4000,
+            "children": [
+                { "label": "Analytical Writing", "id": 4010 },
+                { "label": "Data Sufficiency", "id": 4020 }
+            ] 
+        }
+    ]
+}
+

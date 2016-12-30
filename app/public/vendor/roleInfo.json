@@ -1,0 +1,169 @@
+{  
+   "name":"roleInfo",
+   "children":[  
+        {
+            "label": "Accountant", "id": 2000,
+            "children": [
+                { "label": "Accountant", "id": 2010 },
+                { "label": "Senior Accountant", "id": 2020 },
+                { "label": "Chief Accountant", "id": 2030 }
+            ]
+        },
+        {
+            "label": "Analyst", "id": 3000,
+            "children": [
+                { "label": "System Analyst", "id": 3010 },
+                { "label": "Senior System Analyst", "id": 3020 }
+            ]
+        },
+        {
+            "label": "Building Architect", "id": 3500,
+            "children": [
+                { "label": "Architect", "id": 3510 },
+                { "label": "Senior Architect", "id": 3520 }
+            ]
+        },
+        {
+            "label": "Business Process Outsourcing", "id": 4000,
+            "children": [
+                { "label": "Voice Process Executive", "id": 4010},
+                { "label": "BPO Executive", "id": 4020 }
+            ]
+        },
+        {
+            "label": "Engineer", "id": 5000,
+            "children": [
+                { "label": "Engineer", "id": 5010 },
+                { "label": "Senior Engineer", "id":  5020 },
+                { "label": "Principal Engineer", "id": 5030 }
+            ]
+        },
+        {
+            "label": "Human Resources", "id": 5500,
+            "children": [
+                { "label": "Human Resource Executive", "id": 5510 },
+                { "label": "Human Resource Manager", "id":  5520 },
+                { "label": "Head - Human Resources", "id": 5530 }
+            ]
+        }, 
+        {
+            "label": "Lead Executives", "id": 6000,
+            "children": [
+                { "label": "Country Head", "id": 6010 },
+                { "label": "Business Unit Lead", "id": 6020 },
+                { "label": "Vice President", "id": 6030 }
+            ]
+        },
+        {
+            "label": "Marketing", "id": 7000,
+            "children": [
+                { "label": "Marketing Manager", "id": 7010},
+                { "label": "Marketing Executive", "id": 7020 },
+                { "label": "Sales Manager", "id": 7030 },
+                { "label": "Sales Executive", "id": 7040 },
+                { "label": "Territory Manager", "id": 7050 },
+                { "label": "Area Manager", "id": 7060 },
+                { "label": "Regional Manager", "id": 7070 },
+                { "label": "Country Manager", "id": 7080 }
+            ]
+        },
+        {
+            "label": "Peoples Manager", "id": 8000,
+            "children": [
+                { "label": "Team Lead", "id": 8010 },
+                { "label": "Team Manager", "id": 8020 },
+                { "label": "Sub-team lead", "id": 8030 },
+                { "label": "Scrum Master", "id": 8040 }
+            ]
+        },
+        {
+            "label": "Professor", "id": 9000,
+            "children": [
+                { "label": "Lecturer", "id": 9010 },
+                { "label": "Reader", "id": 9020 },
+                { "label": "Assistant Professor", "id": 9030 },
+                { "label": "Associate Prefessor", "id": 9040 },
+                { "label": "Professor", "id": 9050 }
+            ]
+        },
+        {
+            "label": "Project Manager", "id": 10000,
+            "children": [
+                { "label": "Project Manager", "id": 10010 },
+                { "label": "Engineering Manager", "id": 10020 },
+                { "label": "Product Manager", "id": 10030 },
+                { "label": "Senior Project Manager", "id": 10040 },
+                { "label": "Senior Engineering Manager", "id": 10050 },
+                { "label": "Senior Product Manager", "id": 10060 },
+                { "label": "Product Owner", "id": 10070 }
+            ]
+        },
+        {
+            "label": "Product Architect", "id": 10500,
+            "children": [
+                { "label": "Product Architect", "id": 10510 },
+                { "label": "Senior Product Architect", "id": 10520 },
+                { "label": "Solution Architect", "id": 10530 }
+            ]
+        },
+        {
+            "label": "Quality Assurance", "id": 10700,
+            "children": [
+                { "label": "Quality Assurance Executive", "id": 10710 },
+                { "label": "Quality Assurance Manager", "id": 10720 },
+                { "label": "Head- Quality Assurance", "id": 10730 }
+            ]
+        },
+        {
+            "label": "Researcher", "id": 11000,
+            "children": [
+                { "label": "Scientist", "id": 11010 },
+                { "label": "Senior Scientist", "id": 11020 },
+                { "label": "Lead Scientist", "id": 11030}
+            ]
+        },
+        {
+            "label": "Software Architect", "id": 12000,
+            "children": [
+                { "label": ".Net Architect", "id": 12010 },
+                { "label": "Java Architect", "id": 12020 },
+                { "label": "BIGDATA Architect", "id": 12030 },
+                { "label": "Software Architect", "id": 12040 },
+                { "label": "Senior Software Architect", "id": 12050 },
+                { "label": "Prinipal Software Architect", "id": 12060 }
+            ]
+        },
+        {
+            "label": "Software Engineer", "id": 13000,
+            "children": [
+                { "label": "UX Designer", "id": 13010 },
+                { "label": "Software Engineer Trainee", "id": 13020 },
+                { "label": "Software Engineer", "id": 13030 },
+                { "label": "Sr. Software Engineer", "id": 13040 },
+                { "label": "Principal Software Engineer", "id": 13050 },
+                { "label": "Software Verification Engineer", "id": 13060 },
+                { "label": "Sr. Software Verification Engineer", "id": 13070 },
+                { "label": "Software Test Engineer", "id": 13080 },
+                { "label": "Sr. Software Test Engineer", "id": 13090 }
+            ]
+        },
+        {
+            "label": "Teacher", "id": 14000,
+            "children": [
+                { "label": "Assistant Teacher: Kindergarten", "id": 14010 },
+                { "label": "Assistant Teacher: Higher Education", "id": 14020 },
+                { "label": "Head Master", "id": 14030 }
+            ]
+        },
+        {
+            "label": "Top Management", "id": 15000,
+            "children": [
+                { "label": "Cofounder", "id": 15010 },
+                { "label": "CEO", "id": 15020 },
+                { "label": "CTO", "id": 15030 },
+                { "label": "CFO", "id": 15040 },
+                { "label": "CIO", "id": 15050 }
+            ]
+        }
+    ]
+}

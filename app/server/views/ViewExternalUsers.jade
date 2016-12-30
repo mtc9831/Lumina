@@ -1,0 +1,23 @@
+
+doctype
+html
+	head
+		meta(name='viewport', content='width=device-width,user-scalable=yes')
+		title View External Users
+	body
+
+	block scripts
+		link(rel='stylesheet', href='vendor/alertify/css/alertify.css', type='text/css')
+		link(rel='stylesheet', href='vendor/jqgrid/css/ui.jqgrid-bootstrap.css')
+		link(rel='stylesheet', href='vendor/jqgrid/css/ui.jqgrid-bootstrap-ui.css')
+		link(rel='stylesheet', href='vendor/jqgrid/css/ui.jqgrid.css')
+		link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js')
+		script(type='text/javascript', src='vendor/jqgrid/js/jquery.jqGrid.min.js')
+		script(type='text/javascript', src='vendor/jqgrid/js/i18n/grid.locale-en.js')
+		script(type='text/javascript', src='vendor/alertify/js/alertify.js')
+		script(type='text/javascript', src='js/views/viewExternalUsers.js')
+	block content
+		table#tableOfUsers
+		div#pager

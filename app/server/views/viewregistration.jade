@@ -1,0 +1,56 @@
+doctype html
+head
+      title Registration Request Page
+      base(href='/viewregistration')
+      meta(name='viewport', content='width=device-width,user-scalable=yes')
+      // Bootstrap
+      link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+      link(href='css/main.css', rel='stylesheet', type='text/css')
+      style.
+         .dl-horizontal {
+            dd {
+            . clearfix();
+            }
+         }
+body
+      block-scripts
+         script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js')
+         script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+         script(type='text/javascript', src='vendor/loadJSON.js')
+         script(type='text/javascript', src='javascripts/bootstrap.js')
+         script(type='text/javascript', src='js/views/ViewReg.js')
+      block-content
+         legend #{title}
+         div.container(style='margin:20px')
+            table.table.table-bordered.table-striped
+               thead
+                  tr
+                     th(style='width:20px', align='left') #
+                     th(style='width:200px', align='left') Name
+                     th(style='width:200px', align='left') Email
+                     th(style='width:140px', align='left') Contact No.
+                     th(style='width:160px', align='left') Board / College / University
+                     th(style='width:140px', align='left') Standard
+               tbody
+                  - for (var i = 0; i < regDetails.length; i++)
+                        tr
+                           td= i + 1
+                           td= regDetails[i].name
+                           td= regDetails[i].email
+                           td= regDetails[i].contactno
+                           td= regDetails[i].board
+                           td= regDetails[i].standard
+                           td
+                              a.btn.btn-info(href='#', onclick="javascript:ViewDetails(\'" + regDetails[i].name + "\',\'" + regDetails[i].email + "\',\'" + regDetails[i].contactno + "\',\'" +  regDetails[i].country + "\',\'" + regDetails[i].board + "\',\'" + regDetails[i].standard  + "\',\'" + regDetails[i].doc1.replace(/\\/g,'/') + "\',\'" + regDetails[i].doc2.replace(/\\/g,'/') + "\');")
+                                 i.glyphicon-eye-open.glyphicon
+                                 |  Details
+                           td
+                              a.btn.btn-warning(href='#', onclick="javascript:ApproveDetails(\'" + regDetails[i]._id + "\',\'" + regDetails[i].name + "\',\'" + regDetails[i].email + "\',\'" + regDetails[i].contactno + "\',\'" +  regDetails[i].country + "\',\'" + regDetails[i].board + "\',\'" + regDetails[i].standard + "\');")
+                                 i.glyphicon-eye-open.glyphicon
+                                 |  Approve
+                           td
+                              a.btn.btn-danger(href='#', onclick="javascript:RejectDetails(\'" + regDetails[i]._id + "\');")
+                                 i.glyphicon-eye-open.glyphicon
+                                 |  Reject
+
+include modals/alert

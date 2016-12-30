@@ -1,0 +1,1 @@
+$(function(){$("#slideShow").slideShow({delay:1E4,touch:!0,slides:[{image:'<img src="images/agenda1.jpg">',href:"#"},{image:'<img src="images/agenda2.jpg">',href:"#"},{image:'<img src="images/agenda3.jpg">',href:"#"}]})});

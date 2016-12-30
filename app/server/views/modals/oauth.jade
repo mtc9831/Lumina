@@ -1,0 +1,49 @@
+.modal-oauth.modal.hide.fade
+    div.modal-header
+        button.close(data-dismiss='modal') x
+        h3
+        br
+    div.modal-body(align='center')
+        span
+            h4 Area of Interest:
+                select#interest(name='interest')
+                    option(value='-') --SELECT FROM DROPDOWN--
+                    option(value='GRE') GRE
+                    option(value='GMAT') GMAT
+                    option(value='TOEFL') TOEFL/IELTS
+                    option(value='ENGINEERING') ENGINEERING ENTRANCE
+                    option(value='MEDICAL') MEDICAL ENTRANCE
+                    option(value='MANAGEMENT') MANAGEMENT ENTRANCE
+                    option(value='BOARD10') BOARD 10
+                    option(value='BOARD12') BOARD 10+2
+        br
+        a(href='/auth/google', target='_blank')#googlesign
+                    img(src='images/googlelogin.png', height='14px', width='185px', border='3')
+        |&nbsp;      
+        a(href='/auth/windowslive', target='_blank')#livesign
+                    img(src='images/NewMicrosoft.png', height='14px', width='185px',  border='3')
+        br
+        br
+        a(href='/auth/facebook', target='_blank')#facebooksign
+                    img(src='images/facebooklogin.png', height='14px', width='185px', border='3')
+        |&nbsp;&nbsp;
+        a(href='/auth/linkedIn', target='_blank')#linkedInsign
+                    img(src='images/NewSignLinkedIn.png', height='14px', width='185px',  border='3')
+        br
+        br
+        a(href='/auth/yahoo', target='_blank')#yahoosign
+                    img(src='images/yahoo.png', height='14px', width='185px', border='3')
+        |&nbsp;&nbsp;
+        a(href='/auth/twitter', target='_blank')#twittersign
+                    img(src='images/twitter.png', height='14px', width='185px',  border='3')
+        br
+        br
+
+        h4 OR
+        span
+           h7 Email:
+               input#emailProvider(type='email', name='emailProvider', style='width: 320px; height: 20px;margin-bottom: 1px')
+               button.btn.btn-block(type='button')#resourceProvider
+                  |Go   
+    div.modal-footer
+        button(data-dismiss="modal").cancel.btn Cancel

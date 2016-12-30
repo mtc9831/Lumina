@@ -1,0 +1,55 @@
+html
+   head
+      meta(name='viewport', content='width=device-width,user-scalable=yes')
+      title Welcome to CliqueLearn Open Resources
+
+      link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+      link(rel='stylesheet', href='css/style.css', type="text/css")
+      script(type='text/javascript').
+
+         // Counselling Admin Page
+         function OpenCourseMaterialsPage(){
+            window.location = '/opencm?interest='+$('#interest').val();
+         } 
+         function OpenAssignmentPage(){
+            window.location = '/openassg?interest='+$('#interest').val();
+         }
+         function OpenPractiseTestPage(){
+            window.location = '/openquiz?interest='+$('#interest').val();
+         }
+         function OpenWritingSkillTestPage(){
+            window.location = '/openessay?interest='+$('#interest').val();
+         }
+   body
+      block scripts
+         script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+         script(src='vendor/bootstrap-modal.js')
+         script(src='vendor/bootstrap-transition.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js')
+      block content
+         div.navbar.navbar-fixed-top
+            div.navbar-inner
+               div.container-fluid
+                  ul#global-nav.nav.pull-left
+                     a(href='#').brand Control Panel
+                  button#btn-logout.btn.btn-primary
+                     i.icon-lock.icon-white
+                     | Sign Out
+
+         #panel-container
+            #account-form.form-horizontal.well.span9
+               h2 External Students' Control Panel
+               h3 Open Resources 
+               br
+               input#interest(type='hidden', name='subject_of_interest', value= interest)
+               h4 Study Materials
+               div(style='text-align: center;')                  
+                  input.btn-admin-custom(id='opencoursepage', type='button', value='Sample Course Materials', onclick='OpenCourseMaterialsPage();')
+               h4 Exercises
+               div(style='text-align: center;')
+                  br
+                  input.btn-admin-custom(id='openassignmentpage', type='button', value='Sample Assignments', onclick='OpenAssignmentPage();')
+                  input.btn-admin-custom(id='openquizpage', type='button', value='Sample Practise Tests', onclick='OpenPractiseTestPage();')
+                  input.btn-admin-custom(id='openwritingpage', type='button', value='Sample Writing Skill Tests', onclick='OpenWritingSkillTestPage();')

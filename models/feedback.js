@@ -1,0 +1,1 @@
+module.exports=function(a){var b=new a.Schema({fbType:{type:Number},fbProvider:{type:String},fbProviderEmail:{type:String},fbProviderContact:{type:String},fbText:{type:String},fbTime:{type:Date,default:Date.now},fbIsDisplayed:{type:Boolean,default:!1}});this.model=a.model("Feedback",b);return this};

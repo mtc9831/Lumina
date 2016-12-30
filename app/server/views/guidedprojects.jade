@@ -1,0 +1,243 @@
+doctype
+html
+  head
+    title Projects
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='Content/Site.css', type='text/css')
+    link(rel='stylesheet', href='vendor/bootstrap.css', type='text/css')
+ 
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    script(type='text/javascript', src='js/views/noie.js')
+    script(type='text/javascript', src='vendor/bootstrap-modal.js')
+    script(type='text/javascript', src='vendor/bootstrap-transition.js')
+    script(type='text/javascript', src='vendor/more-show.js')
+    script(type='text/javascript').
+        $(document).ready(function(){
+            $("#linkfaq").on('click', function(evt){
+                evt.preventDefault();
+                $('.modal-faq').modal({ show : false, keyboard : false, backdrop : 'static' });
+                $('.modal-faq .modal-header h3').text('Frequently Asked Questions');
+    
+                $('.modal-faq').modal('show');
+            });
+        });
+  body
+    //include navbar
+    br
+    br
+    .container-fluid
+        .row
+            .span12
+                .well
+                    h2 List Of Projects:
+                    p We provide information and guidance to the following projects. You can choose any suitable technology to implement.
+                    p Please view 
+                        a(href='/projectfaq')#linkfaq FAQ
+                        |  to learn more. 
+                    .remo-show
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Robotics Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Robotics Projects
+
+                        //br
+                        //br
+                        a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Software Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Software Projects
+
+                        div.container
+                            h4 Information Systems Projects
+                            ul
+                                li Hotel Reservation & Booking System
+                                li Restaurant Management System
+                                li Airline Booking System
+                                li Airline Ground Management System - Passengers & Luggage
+                                li Bus Booking and Bus Pass Distribution Management System  
+                                li Cricket Scoreboard application
+                                li Tournament Management System
+                                li Examination Management System
+                                li Online Quiz Management System
+                                li Employee Information Management System
+                                li Employee Performance Management system
+                                li Employee Timesheet Management System 
+                                li Employee Grievence Redressal System
+                                li Employee Health Record Management System
+                                li Employee Attendence and leave manamegent system 
+                                li Recruitment Management System
+                                li Corporate Human Resource Management System
+                                li Corporate Asset Tracker and Management System
+                                li Personal Financial Investment Management System
+                                li Personal Financial Expense Management And Tracking System 
+                                li Corporate Financial Management System
+                                li Corporate Payroll Processing System
+                                li Hospital Bed Management System
+                                li Hospital - Diagnostics Management, Distritribution & Notification System
+                                li Hospital - Patient Appointment Booking System 
+                                li Hospital - Patient Record Management System
+                                li Hospital - Blood Bank Management System
+                                li Hospital - Pharmacy Management System
+                                li Banking System Software [Current, Savings, Recurring and Fixed Deposit A/c]
+                                li Online Auction Management System
+                                li Online Advertising Portal
+                                li Personal Task Management System
+                                li Network Management System
+                                li Library Management System
+                                li E-Library with digital rights management
+                                li Personal Password [Text & Graphics] Management System
+                                li Online Book seller's Portal
+                                li Online e-learning platform
+                                li Predictive Analytics for E-commerce
+                                li Online Real-Estate Portal
+                                li Warehouse Management System
+                                li Apartment billing, management and communication system
+                                
+                            h4 Software Engineering Projects
+                            ul 
+                                li Software Project Management System
+                                li Project Information Distribution & Management System
+                                li Software Development Bug Tracker
+                                li Software Development - Change Management System
+                                li Software Requirement Management System
+                                li Software Test Management System
+                                li Software Release Management System
+                                li Software Version Control System
+                                li Distributed License Management System 
+                                li Web based Email Client
+                                li Software Project Management Dashboard
+                            h4 Application Development Projects
+                            ul
+                                li Download Accelarator
+                                li Programming Language Editor With Syntax Highlighting
+                                
+                            h4 Social Networking Project
+                            ul
+                                li Blogging Portal
+                                li Image sharing portal
+                                li Sentiment analysis in Social Media from meme  
+                            h4 Image & Video Processing Projects
+                            ul
+                                li Fingerprint Matching System
+                                li Content based image search
+                                li Image watermarking
+                                li Motion detection in Videos
+                                li Sound Detection in Videos
+                                li Image & Video Format Conversion System
+                                  
+                            h4 Compiler Development Project
+                            ul
+                                li Miscellaneous Programming Languages - Syntax Checkers
+                                li Miscellaneous Programming Languages - Source Code Beautifier
+                                li Miscellaneous Scripting Languages - Converters
+                        br
+                        br
+                        a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Electronics Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Electronics Projects
+
+                        div.container 
+                            ul
+                                li High Stability Voltage Reference
+                                li On-Off Voltage Controller
+                                li Automotive Burgler Alarm
+                                li Security alarm
+                                li Vehicle Security System
+                                li Home Security Monitor System
+                                li Antitheft Device
+                                li Tamper proof burgler alarm
+                                li Motion Activated Motor-cycle or car alarm
+                                li Boat alarm
+                                li Sun powered wakeup alarm
+                                li Freezer Meltdown alarm
+                                li Automatic tape recording
+                                li Voltage Controlled Variable Gain Amplifier
+                                li 3.5 digit Analog to Digital Converter with LCD display
+                                li Vehicle Speed Alarm / Warning Device
+                                li Automotive Ice Warning and Lights Remainder
+                                li Car Battery Monitor 
+                                li Windshield Washer Fluid Watcher
+                                li Constant Voltage, Constant Current Battery Charger
+                                li Automatics Shutoff Battery Charger
+                                li Battery Condition Indicator
+                                li Battery Charge / Discharge Indicator 
+                                li Electronic Fishing Lure
+                                li 6V from 12V Batteries
+                                li Dual LED Flasher
+                                li Audio Power Meter
+                                li OverVoltage Protection with Automatic Reset
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Economics Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Economics Projects
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Electrical Engineering Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Electrical Engineering Projects
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Bio-Technology Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Bio-Technology Projects
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Design Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Design Projects
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Mechanical Engineering Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Mechanical Engineering Projects
+                        //br
+                        //br
+                        //a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Chemical Engineering Projects
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Chemical Engineering Projects
+                        br
+                        br
+                        a.morebutton1(href='javascript:void(0)')
+                            img(src='/images/icon_PLUS.gif') 
+                            |    Research Projects (Broad Areas)
+                            a.morebutton2(href='javascript:void(0)')
+                                img(src='/images/icon_MINUS.gif')
+                                |   Research Projects (Broad Areas)
+                        div.container 
+                            ul 
+                                li Summary of Articles
+                                li Human Computer Interface
+                                li Natural Language Processing
+                                li Neural Network based Pattern Recognition
+                                li Utilizing Social Network for Human Benefits
+                                li Information Security 
+
+include modals/projectfaq

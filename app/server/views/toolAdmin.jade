@@ -1,0 +1,89 @@
+html
+   head
+      meta(name='viewport', content='width=device-width,user-scalable=yes')
+      title Welcome to Tool Administrator's Page
+      link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+      link(rel='stylesheet', href='css/style.css', type="text/css")
+      script(type='text/javascript').
+
+        // View Registration Page
+        function RegistrationPage() {
+            window.location = "/viewregistration";
+        }
+        // New User Page
+        function NewUserPage() {
+            window.location = "/signup8979876857869687";
+        }
+        // Account Settings page
+        function AccountSettingPage() {
+            window.location = "/accountsettings";
+        }
+        // User modification page
+        function ModifyUserPage() {
+            window.location = "/userAdmin";
+        }
+        // User Print Page
+        function UserPrintPage() {
+            window.location = "/print";
+        }
+        // User Role Page
+        function AssignCoursePage(){
+            window.location = "/assignCourses";
+        }
+        function UserRolePage(){
+            window.location = "/associateRoles";
+        }
+        function AssociationPage(){
+             window.location = "/Association";
+        }
+        // JobPost Admin Page
+        function JobPostAdminPage() {
+            window.location = "/index";
+        }
+        function AdvertisedJobPage(){
+            window.location = "/advertisedjobs";
+        }
+        // Blog Page
+        function BlogPage() {
+            window.location = "/blog";
+        }
+        // Feedback Admin Page
+        function FeedbackAdminPage(){            
+            window.location = "/feedbackAdmin";
+        }
+        // View External Users Page
+        function ViewExternalUsersPage(){
+            window.location = "/externalUsers";
+        }
+   body
+      block scripts
+        script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+        script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+        script(type='text/javascript', src='vendor/bootstrap-modal.js')
+        script(type='text/javascript', src='vendor/bootstrap-transition.js')
+        script(type='text/javascript', src='js/views/toolAdmin.js')
+
+      block content
+         div.navbar.navbar-fixed-top
+             div.navbar-inner
+                  div.container-fluid
+                      ul#global-nav.nav.pull-left
+                          a(href='#').brand Control Panel
+                      button#btn-logout.btn.btn-primary
+                          i.icon-lock.icon-white
+                          | Sign Out
+
+         #panel-container
+             #account-form.form-horizontal.well.span9
+                legend User Administration
+                div(style='text-align: center;')
+                   input.btn-admin-custom(id='registrationpage', type='button', value='View & Approve Registration Requests', onclick='RegistrationPage();')
+                   input.btn-admin-custom(id='userprintpage', type='button', value='Display List of All Users', onclick='UserPrintPage();')
+             #account-form.form-horizontal.well.span9
+                legend Management & Promotion
+                div(style='text-align: center;')
+                   input.btn-admin-custom(id='blogpage', type='button', value='Post a Blog', onclick='BlogPage();')
+                   input.btn-admin-custom(id='fbadminpage', type='button', value='Manage Feedbacks', onclick='FeedbackAdminPage();')
+                   input.btn-admin-custom(id='extuserpage', type='button', value='View External Users', onclick='ViewExternalUsersPage();') 
+include modals/alert
+include modals/confirm

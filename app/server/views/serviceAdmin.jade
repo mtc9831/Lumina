@@ -1,0 +1,96 @@
+html
+   head
+      title Welcome to Administrator's Page
+      meta(name='viewport', content='width=device-width,user-scalable=yes')
+      link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+      link(rel='stylesheet', href='css/style.css', type="text/css")
+      script(type='text/javascript').
+
+         // Counselling Admin Page
+         function LoadCounsellingAdminPage(){
+            window.location = "/counsellingAdmin";
+         }
+         // Query Admin Page
+         function LoadQueryAdminPage(){
+            window.location = "/queryAdmin";
+         }
+         // ConfigureTest Page
+         function LoadConfigureTestPage() {
+            window.location = "/createTest";
+         }
+         // Chat Page
+         function ChatPage() {
+            window.location = "/chat";
+         }
+         // Score Essay Page
+         function ScoreEssaysPage() {
+            window.location = "/scoreessays";
+         }
+         // Review Report Page
+         function ReviewReportPage() {
+            window.location = "/revReports"; 
+         }
+         //Essay Topic Page
+         function EssayTopicPage(){
+            window.location = "/essayTopicAdmin";
+         } 
+         // AssignmentAdmin Page
+         function NewAssignmentPage(){
+             window.location = "/assignmentAdmin";
+         }
+         // AssignmentAdmin Page
+         function ManageAssignmentPage(){
+             window.location = "/assgManagement";
+         }
+         // AssignmentAdmin Page
+         function ReviewAssignmentPage(){
+             window.location = "/assgSolnReview";
+         }
+   body
+      block scripts
+         script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+         script(src='vendor/bootstrap-modal.js')
+         script(src='vendor/bootstrap-transition.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js')
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js')
+         script(src='js/views/serviceAdmin.js')
+
+      block content
+         h2 Service Administration 
+         div.navbar.navbar-fixed-top
+            div.navbar-inner
+               div.container-fluid
+                  ul#global-nav.nav.pull-left
+                     a(href='#').brand Control Panel
+                  button#btn-logout.btn.btn-primary
+                     i.icon-lock.icon-white
+                     | Sign Out
+
+         #panel-container
+            #account-form.form-horizontal.well.span9
+               legend Service Administration  
+               div(style='text-align: center;')
+                  input.btn-admin-custom(id='counsellingadminpage', type='button', value='Career Counselling', onclick='LoadCounsellingAdminPage();')
+                  br
+                  br  
+                  input.btn-admin-custom(id='configuretestpage', type='button', value='Configure A Test', onclick='LoadConfigureTestPage();')
+                  br
+                  br
+                  input.btn-admin-custom(id='revreportpage', type='button', value='Review Project Report', onclick='ReviewReportPage();')
+                  br 
+                  br
+                  input.btn-admin-custom(id='queryadminpage', type='button', value='Reply To Academic Question', onclick='LoadQueryAdminPage();')
+                  input.btn-admin-custom(id='chatpage', type='button', value='Chat with Student', onclick='ChatPage();')
+                  br
+                  br
+                  input.btn-admin-custom(id='essaytopicpage', type='button', value='Essay Topics Admin', onclick='EssayTopicPage();')
+                  input.btn-admin-custom(id='scoreessaypage', type='button', value='Score Essays', onclick='ScoreEssaysPage();')
+                  br
+                  br
+                  input.btn-admin-custom(id='assignmentpage', type='button', value='Post New Assignment', onclick='NewAssignmentPage();')
+                  input.btn-admin-custom(id='assignmentpage', type='button', value='Manage Assignments', onclick='ManageAssignmentPage();')
+                  input.btn-admin-custom(id='assignmentpage', type='button', value='Review Assignment Solutions', onclick='ReviewAssignmentPage();')
+
+include modals/alert
+include modals/confirm

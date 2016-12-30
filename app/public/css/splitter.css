@@ -1,0 +1,1 @@
+#verticalSplitter{height:400px;//width:95%;//min-width:20%;border:2px solid #aaa;margin:2em 1em}#verticalSplitter div{overflow:auto}#skillTree{//background:#fff;overflow:auto;width:300px;min-width:200px}#skillListView{//background:#fff;overflow:auto;min-width:100px}#verticalSplitter .vsplitbar{width:2px;cursor:e-resize;cursor:col-resize;background:#aaa}

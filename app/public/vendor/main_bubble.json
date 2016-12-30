@@ -1,0 +1,129 @@
+{  
+   "name":"bubble",
+   "children":[  
+      {  
+         "name":"Educational",
+         "description":"Educational, Coaching & Mentoring Services To Students",
+         "children":[  
+            {  
+               "name":"Assignment Management System",
+               "address":"/competitivedoc",
+               "note":"Assignment correction and evaluation (Personalized)"
+            },
+            {  
+               "name":"Academic Query",
+               "address":"/competitivedoc",
+               "note":"Answering Queries of Students On Academics (Personalized)"
+            },
+            {  
+               "name":"Mock tests",
+               "address":"/competitivedoc",
+               "note":"Time Limited Practise test for improvement of performance (Personalized)"
+            },
+            {  
+               "name":"Writing Skills",
+               "address":"/competitivedoc",
+               "note":"Pratice of essay writing skills by time limited test and evaluation(Personalized)"
+            },
+            {  
+               "name":"Supervised Projects",
+               "address":"/competitivedoc",
+               "note":"Select a project from the list and execute under supervision. Get the project or white paper reviewed by experts."
+            },
+            {  
+               "name":"E-library",
+               "address":"/competitivedoc",
+               "note":"Digital Library of reference books for students"
+            }
+         ]
+      },
+      {  
+         "name":"Research",
+         "description":"Services to research students",
+         "children":[  
+            {  
+               "name":"Literature Search",
+               "address":"/researchdoc",
+               "note":"Literature Search on a problem statement"
+            },
+            {  
+               "name":"Discuss Research Topic",
+               "address":"/researchdoc",
+               "note":"Discuss a research topic with research scholars"
+            },
+            {  
+               "name":"Review Research Papers",
+               "address":"/researchdoc",
+               "note":"Get a research paper reviewed by experts."
+            },
+            {  
+               "name":"Scientific Research Paper Writing",
+               "address":"/researchdoc",
+               "note":"Get a research paper written scientifically (using LaTex tools)."
+            }
+         ]
+      },
+      {  
+         "name":"Career Oriented",
+         "description":"Profiles of Country",
+         "children":[  
+            {  
+               "name":"Career Counselling",
+               "address":"/counsellingdoc",
+               "note":"Address to career related queries and guidances."
+            },
+            {  
+               "name":"Earn while Learn",
+               "address":"/freelance",
+               "note":"Short term contractual work for students."
+            },
+            {  
+               "name":"Resume Writing",
+               "address":"/cvwriting",
+               "note":"Development of Resume with help of experts."  
+            },
+            {  
+               "name":"Fresher's Jobs",
+               "address":"/freshersjob",
+               "note":"Application to open advertised jobs."  
+            }
+         ]
+      },
+      {  
+         "name":"Tools & Resources",
+         "description":"Tools & Resources for educational purposes",
+         "children":[  
+            {  
+               "name":"Report Generation",
+               "address":"",
+               "note":"Generation of graphical .pdf reports"
+            },
+            {  
+               "name":"Source Code Editor",
+               "address":"",
+               "note":"Source code editor for various programming & scripting languages"
+            },
+            {  
+               "name":"Document Locker",
+               "address":"",
+               "note":"Document Locker"
+            },
+            {  
+               "name":"Functional Plots & Sketches",
+               "address":"",
+               "note":"Functional Plots & Sketches"
+            },
+            {  
+               "name":"Educational Resources",
+               "address":"",
+               "note":"Collection of educational resources"
+            },
+            {  
+               "name":"Web Links to educational sites",
+               "address":"/",
+               "note":"Collection of important web links"
+            }
+         ]
+      }
+   ]
+}

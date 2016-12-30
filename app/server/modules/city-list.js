@@ -1,0 +1,2 @@
+module.exports=[{n:"Delhi/NCR"},{n:"Mumbai"},{n:"Kolkata"},{n:"Bangalore"},{n:"Hydrabad/Secundrabad"},{n:"Pune"},{n:"Chennai"},{n:"Ahmedabad"},{n:"Bhopal"},{n:"Bhuvaneshwar"},{n:"Chandigarh"},{n:"Cuttack"},{n:"Guwahati"},{n:"Goa"},{n:"Howrah"},{n:"Jaipur"},{n:"Mysore"},{n:"Patna"},{n:"Surat"},{n:"Siliguri"},{n:"Trivandram"},{n:"Vadodara"},{n:"Australia"},{n:"Brazil"},{n:"Mexico"},{n:"New Zealand"},{n:"Singapore"},{n:"HongKong"},{n:"Malaysia"},{n:"Middle East"},{n:"France"},{n:"Spain"},{n:"South Africa"},
+{n:"Switzerland"},{n:"UK"},{n:"USA"}];

@@ -1,0 +1,28 @@
+doctype
+html
+	head
+		title CliqueLearn Signup
+		meta(name='viewport', content='width=device-width,user-scalable=yes')
+		link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+		link(rel='stylesheet', href='css/style.css', type="text/css")
+		link(rel='stylesheet', href='stylesheets/jquery.realperson.css', type='text/css')
+		link(rel='stylesheet', href='vendor/pwdwidget.css')
+		script(type='text/javascript', src='vendor/pwdwidget.js')
+	body
+		block content
+			include account
+			include modals/alert
+		block scripts
+			script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+			script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js')
+			script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js')
+			script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js')
+			script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+			script(type='text/javascript', src='vendor/loadJSON.js')
+			script(type='text/javascript', src='vendor/bootstrap-modal.js')
+			script(type='text/javascript', src='vendor/bootstrap-transition.js')
+			script(type='text/javascript', src='js/views/signup.js')
+			script(type='text/javascript', src='js/controllers/signupController.js')
+			script(type='text/javascript', src='js/form-validators/accountValidator.js')
+			script(type='text/javascript', src='javascripts/jquery.plugin.min.js')
+			script(type='text/javascript', src='javascripts/jquery.realperson.min.js')

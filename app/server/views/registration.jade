@@ -1,0 +1,89 @@
+doctype
+html
+   head
+      meta(name='viewport', content='width=device-width,user-scalable=yes')
+      title Registration Page
+   body
+      link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css', type="text/css")
+      link(rel='stylesheet', href='css/style.css', type="text/css")
+      link(rel='stylesheet', href='Content/Site.css', type='text/css')
+      link(rel='stylesheet', href='Content/navbar.css', type='text/css')
+      link(rel='stylesheet', href='stylesheets/jquery.realperson.css', type='text/css')
+      link(rel='stylesheet', href='css/megamenu.css', type='text/css')
+      link(rel='stylesheet', href='css/theme_002.css', type='text/css')
+      link(rel='stylesheet', href='css/theme.css', type='text/css')
+      link(rel='stylesheet', href='css/960.css', type='text/css')
+      script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js')
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js')
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.09/jquery.form.min.js')
+      script(type='text/javascript', src='vendor/bootstrap-modal.js')
+      script(type='text/javascript', src='vendor/bootstrap-transition.js')
+      script(type='text/javascript', src='js/views/registration.js')
+      script(type='text/javascript', src='js/form-validators/registrationValidator.js')
+      script(type='text/javascript', src='javascripts/jquery.plugin.min.js')
+      script(type='text/javascript', src='javascripts/jquery.realperson.min.js')
+
+   block content
+      include navbar
+      #account-form-container
+         form( method='post', action='/register', enctype='multipart/form-data')#registration-form.form-horizontal.well.span6
+            h2
+            p#sub1.subheading Please tell us a little about yourself.
+            hr
+            fieldset
+               #name-rg.control-group
+                  label.control-label(for='name-rg') Name
+                  .controls
+                     input#name-rf.input-xlarge(type='text', name='name')
+               #email-rg.control-group
+                  label.control-label(for='email-rg') Email
+                  .controls
+                     input#email-rf.input-xlarge(type='text', name='email')
+               #contact-rg.control-group
+                  label.control-label(for='contact-rg') Contact No
+                  .controls
+                     input#contact-rf.input-xlarge(type='text', name='contactno')
+               #clist-rg.control-group
+                  label.control-label(for='country-list') Location
+                  .controls
+                     select#country-list(name='country')
+                        each item in countries
+                           option= item.name
+               #rlist-rg.control-group
+                  label.control-label(for='role-list') Role
+                  .controls
+                     select#role-list(name='role')
+                        option= 'Student'
+               hr
+               p#sub2.subheading
+               #boardname-rg.control-group
+                  label.control-label(for='boardname') Board / College/ University Name
+                  .controls
+                     input#boardname-rf.input-xlarge(type='text', name='board')
+
+               #standard-rg.control-group
+                  label.control-label(for='standard') Standard
+                  .controls
+                     select#std-list(name='standard')
+                        each item in standards
+                           option= item.name
+               #supportingdoc-rg.control-group
+                  label.control-label(for='Supporting Documents') Supporting Documents (Identity, Student identity card)  
+                  .controls
+                     input(type='file', name='doc1', multiple='multiple')#docUpload1
+                     input(type='file', name='doc2', multiple='multiple')#docUpload2
+               #agreement-rg.ccntrol-group
+                  .controls
+                  input(type='checkbox', name='agreement', id='agreement')
+                  |  I agree to
+                  a(href="/servicedoc")  terms and conditions
+               br
+               input#real1(type='text', name='real1')
+               .form-actions
+                  button(type='button')#registration-form-btn1.btn
+                  button(type='submit', disabled='true')#registration-form-btn2.btn
+
+// display form errors in a custom modal window //
+include modals/form-errors
+include modals/alert

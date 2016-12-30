@@ -1,0 +1,59 @@
+doctype
+html
+  head
+    title Contact
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='Content/Site.css', type='text/css')
+    link(rel='stylesheet', href='vendor/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='css/megamenu.css', type='text/css')
+    link(rel='stylesheet', href='css/theme_002.css', type='text/css')
+    link(rel='stylesheet', href='css/theme.css', type='text/css')
+    link(rel='stylesheet', href='css/960.css', type='text/css')
+    link(rel='stylesheet', href='vendor/alertify/css/alertify.css', type='text/css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(type='text/javascript', src='vendor/alertify/js/alertify.js')
+    script(type='text/javascript', src='js/views/contact.js')
+  body
+    include navbar
+    br
+    br
+    .container-fluid
+        .row
+            .span4
+                .well
+                    h2 Contact Information:
+                    h4 CliqueLearn
+                    h5 Phone: +91 9886801047
+                    h5 Email: admin@cliquelearn.org
+
+                .well
+                    h6 This site is developed and maintained by:
+                    h4 KriptoLumen Technologies LLP
+                    h5 I/H-9, Aswininagar
+                    h5 Pubali
+                    h5 Kolkata-700159
+
+                    h6 E-mail: kriptolumen@gmail.com
+            .span7   
+                .hero-unit            
+                    h4 Feedback / Query
+                    span
+                        div(style='float: left;')
+                            select#fbType(name='fbType')
+                                each item in ['--SELECT ONE--', 'Feedback', 'Query']
+                                    option= item
+                    span
+                        div(style='float: left;') Name:
+                            input#fbProvider(type='text', name='fbProvider', style='width: 346px; height: 25px;')
+                    span
+                        div(style="float: left;") Contact No.:
+                            input#fbProviderContact(type='text', name='fbProviderContact', style='width: 300px; height: 25px;')
+                    span
+                        div(style="float: left;") Email:
+                            input#fbProviderEmail(type='email', name='fbProviderEmail', style='width: 348px; height: 25px;')
+                    div(style='float: left;') Comment:
+                    textarea#feedbackText(name='feedbackText', style='width: 450px; height: 150px;')
+                    br
+                    input#submitFeedback(type='button', value='Submit')

@@ -1,0 +1,69 @@
+doctype
+html
+  head
+    title Contact
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='Content/Site.css', type='text/css')
+    link(rel='stylesheet', href='vendor/bootstrap.css', type='text/css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js')
+    script().
+        function SendTextSteam(text){
+            var socket = io.connect();
+            socket.emit('speak', text);
+        }
+  body
+    .container-fluid
+        .row
+            .span10
+                .well
+                    h2 Sample Course Materials Section
+                    - if (interest == 'ENGINEERING')
+                        h4 [Samples]: Engineering Entrance Examination
+                        h4 Mathematics Course Materials
+                        h4 Physics Course Materials
+                        h4 Chemistry Course Materials
+                    - else if (interest == 'MEDICAL')
+                        h4 [Samples]: Medical Entrance Examination
+                        h4 Biology Course Materials
+                        h4 Physics Course Materials
+                        h4 Chemistry Course Materials
+                    - else if ((interest == 'TOEFL') || (interest == 'IELTS'))
+                        h4 [Samples]: TOEFL / IELTS Examination
+                        h4 English Course Materials
+                    - else if (interest == 'GRE')
+                        h4 [Samples]: GRE Examination
+                        h4 English Course Materials
+                        h4 Quantitative Course Materials
+                    - else if (interest == 'GMAT')
+                        h4 [Samples]: GMAT Examination
+                        h4 English Course Materials
+                        p  English Grammar 1 
+                                a(href='/course?subject=English&coursename=ENGLISH_GRAMMAR_0001') ENGLISH_GRAMMAR_0001
+                        p  English Grammar 2 
+                                a(href='/course?subject=English&coursename=ENGLISH_GRAMMAR_0002') ENGLISH_GRAMMAR_0002
+                        p  English Grammar 3 
+                                a(href='/course?subject=English&coursename=ENGLISH_GRAMMAR_0003') ENGLISH_GRAMMAR_0003
+                        p  English Grammar 4 
+                                a(href='/course?subject=English&coursename=ENGLISH_GRAMMAR_0004') ENGLISH_GRAMMAR_0004
+                        p  English Grammar 5 
+                                a(href='/course?subject=English&coursename=ENGLISH_GRAMMAR_0005') ENGLISH_GRAMMAR_0005
+                        h4 Quantitative Course Materials
+                        p  Quantitative 1 
+                                a(href='/course?subject=English&coursename=QUANTITATIVE_0001') QUANTITATIVE_0001
+                        p  Quantitative 2 
+                                a(href='/course?subject=English&coursename=QUANTITATIVE_0002') QUANTITATIVE_0002
+                        p  Quantitative 3 
+                                a(href='/course?subject=English&coursename=QUANTITATIVE_0003') QUANTITATIVE_0003
+                        p  Quantitative 4 
+                                a(href='/course?subject=English&coursename=QUANTITATIVE_0004') QUANTITATIVE_0004
+                        p  Quantitative 5 
+                                a(href='/course?subject=English&coursename=QUANTITATIVE_0005') QUANTITATIVE_0005
+                    - else if (interest == 'SAT')
+                        h4 [Samples]: SAT Examination
+                        h4 English Course Materials
+                        h4 Quantitative Course Materials
+                    p(style='color:#BB0000')  Note: More samples will be put in this area over next few days. Please visit later.  
+- interest = typeof(interest) != 'undefined' ? interest : { }

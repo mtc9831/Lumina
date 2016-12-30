@@ -1,0 +1,27 @@
+
+extends layout
+
+block content
+	div.container(style='margin:20px')
+		table.table.table-bordered.table-striped
+			thead
+				tr
+					th(style='width:20px') #
+					th(style='width:220px', align='left') Name
+					th(style='width:120px', align='left') Role
+					th(style='width:100px', align='left') Location
+					th(style='width:120px', align='left') Board Name
+					th(style='width:120px', align='left') Standard
+					th(style='width:120px', align='left') Username
+					th(align='left') Account Created
+			tbody
+			- for (var i = 0; i < accts.length; i++)
+					tr
+						td= i+1
+						td= accts[i].name
+						td= accts[i].role
+						td= accts[i].country
+						td= accts[i].board
+						td= accts[i].standard
+						td= accts[i].user
+						td= accts[i].date._d

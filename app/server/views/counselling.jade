@@ -1,0 +1,25 @@
+doctype html.no-js
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    base(href='/counselling')
+    title Career Counselling Home Page
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/main.css')
+body(ng-app='cfApp')
+      block content
+
+      block navigator
+          div(ng-include="'partials/navbarCounsel'")
+          .container(ng-view='')
+      block scripts
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js')
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+          script(type='text/javascript', src='javascripts/bootstrap.js')
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-resource.min.js')
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-cookies.min.js')
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-sanitize.min.js')
+          script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.min.js')
+          script(type='text/javascript', src='js/counsellingApp.js')
+          script(type='text/javascript', src='js/controllers/navbarControllerCounsel.js')

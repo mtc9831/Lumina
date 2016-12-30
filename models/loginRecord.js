@@ -1,0 +1,1 @@
+module.exports=function(a){var b=new a.Schema({userId:{type:String,required:!0},interfaceName:{type:String},ipAddress:{type:String},loginTime:{type:Date,default:Date.now}});this.model=a.model("LoginRecord",b);return this};

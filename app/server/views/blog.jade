@@ -1,0 +1,25 @@
+doctype
+html
+    head
+        meta(charset='utf8')
+        meta(name='viewport', content='width=device-width,user-scalable=yes') 
+        base(href='/blog')
+        title Blog
+        link(rel='stylesheet', href='css/blog.css')
+    body(ng-app='blogApp')
+        block body
+        div
+            h2 Blog
+            ul
+                li
+                    a(href='/blog') Home
+                li
+                    a(href='/addPost') Add a new post
+            div(ng-view='')
+        block scripts
+            script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js')
+            script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.min.js')
+            script(type='text/javascript', src='javascripts/ui-bootstrap-tpls.js')
+            script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+            script(type='text/javascript', src='javascripts/bootstrap.js')
+            script(type='text/javascript', src='js/blogApp.js')

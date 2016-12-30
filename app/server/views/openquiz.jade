@@ -1,0 +1,88 @@
+doctype
+html
+  head
+    title Sample Mock Tests
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='Content/Site.css', type='text/css')
+    link(rel='stylesheet', href='vendor/bootstrap.css', type='text/css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+  body
+    .container-fluid
+        .row
+            .span10
+                .well
+                    h2 Sample Quiz Section
+                    - if (interest == 'ENGINEERING')
+                        h4 [Samples]: Engineering Entrance Examination
+                        h4 Mathematics Quiz
+                        h4 Physics Quiz
+                        h6      Quiz 1 - Simple Harmonic Motion (LEVEL - 1) 
+                                    a(href='/quiz?subject=Physics&testname=PHY_SHM_0001#1') PHY_SHM_0001
+                        h6      Quiz 2 - Simple Harmonic Motion (LEVEL - 2) 
+                                    a(href='/quiz?subject=Physics&testname=PHY_SHM_0002#1') PHY_SHM_0002 
+                        h4 Chemistry Quiz
+                        h6      Quiz 1 - Organic Chemistry (LEVEL - 1) 
+                                    a(href='/quiz?subject=Chemistry&testname=CHEM_0001#1') CHEM_0001
+                        h6      Quiz 2 - Periodic Table (LEVEL - 1) 
+                                    a(href='/quiz?subject=Chemistry&testname=CHEM_0002#1') CHEM_0002 
+                    - else if (interest == 'MEDICAL')
+                        h4 [Samples]: Medical Entrance Examination
+                        h4 Physics Quiz
+                        h6      Quiz 1 - Simple Harmonic Motion (LEVEL - 1) 
+                                    a(href='/quiz?subject=Physics&testname=PHY_SHM_0001#1') PHY_SHM_0001
+                        h6      Quiz 2 - Simple Harmonic Motion (LEVEL - 2) 
+                                    a(href='/quiz?subject=Physics&testname=PHY_SHM_0001#1') PHY_SHM_0002 
+                        h4 Chemistry Quiz
+                        h6      Quiz 1 - Organic Chemistry (LEVEL - 1) 
+                                    a(href='/quiz?subject=Chemistry&testname=CHEM_0001#1') CHEM_0001
+                        h6      Quiz 2 - Periodic Table (LEVEL - 1) 
+                                    a(href='/quiz?subject=Chemistry&testname=CHEM_0002#1') CHEM_0002 
+                    - else if ((interest == 'TOEFL') || (interest == 'IELTS'))
+                        h4 [Samples]: TOEFL / IELTS Examination
+                        h4 English Quiz
+                    - else if (interest == 'GRE')
+                        h4 [Samples]: GRE Examination
+                        h6      Quiz 1 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0001#1') MATH_APT_0001
+                        h6      Quiz 2 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0002#1') MATH_APT_0002
+                        h6      Quiz 3 - Sequence Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_SEQ_0001#1') APT_SEQ_0001
+                        h6      Quiz 4 - Relation Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_RELATION_0001#1') APT_RELATION_0001
+                        h6      Quiz 5 - English Word Aptitude Quiz (Level 1)  
+                                   a(href='/quiz?subject=Aptitude&testname=APT_WORD_0001#1') APT_WORD_0001
+                        h6      Quiz 6 - English Synonyms Quiz (Level 3)
+                                   a(href='/quiz?subject=Aptitude&testname=ENG_SYNONYM_3001#1') ENG_SYNONYM_3001
+
+                    - else if (interest == 'GMAT')
+                        h4 [Samples]: GMAT Examination
+                        h6      Quiz 1 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0001#1') MATH_APT_0001
+                        h6      Quiz 2 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0002#1') MATH_APT_0002
+                        h6      Quiz 3 - Sequence Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_SEQ_0001#1') APT_SEQ_0001
+                        h6      Quiz 4 - Relation Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_RELATION_0001#1') APT_RELATION_0001
+                        h6      Quiz 5 - English Word Aptitude Quiz (Level 1)  
+                                   a(href='/quiz?subject=Aptitude&testname=APT_WORD_0001#1') APT_WORD_0001
+                        h6      Quiz 6 - English Synonyms Quiz (Level 3)
+                                   a(href='/quiz?subject=Aptitude&testname=ENG_SYNONYM_3001#1') ENG_SYNONYM_3001
+                    - else if (interest == 'SAT')
+                        h4 [Samples]: SAT Examination
+                        h6      Quiz 1 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0001#1') MATH_APT_0001
+                        h6      Quiz 2 - Mathematics Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=MATH_APT_0002#1') MATH_APT_0002
+                        h6      Quiz 3 - Sequence Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_SEQ_0001#1') APT_SEQ_0001
+                        h6      Quiz 4 - Relation Aptitude Quiz (Level 1) 
+                                   a(href='/quiz?subject=Aptitude&testname=APT_RELATION_0001#1') APT_RELATION_0001
+                        h6      Quiz 5 - English Word Aptitude Quiz (Level 1)  
+                                   a(href='/quiz?subject=Aptitude&testname=APT_WORD_0001#1') APT_WORD_0001
+                        h6      Quiz 6 - English Synonyms Quiz (Level 3)
+                                   a(href='/quiz?subject=Aptitude&testname=ENG_SYNONYM_3001#1') ENG_SYNONYM_3001
+- interest = typeof(interest) != 'undefined' ? interest : { }

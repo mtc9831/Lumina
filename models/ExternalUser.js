@@ -1,0 +1,1 @@
+module.exports=function(a){var b=new a.Schema({last_name:{type:String},first_name:{type:String},email:{type:String,required:!0},token:{type:String},interest:{type:String}});this.model=a.model("ExternalUser",b);return this};

@@ -1,0 +1,77 @@
+ 
+{  
+   "name":"World",
+   "children":[  
+        {
+            "label": "India", "id": 1000,
+            "children": [
+                { "label": "Delhi/NCR", "id": 1001 },
+                { "label": "Mumbai", "id": 1002 },
+                { "label": "Kolkata", "id": 1003 },
+                { "label": "Bangalore", "id": 1004 },
+                { "label": "Hydrabad/Secundrabad", "id": 1005 },
+                { "label": "Pune", "id": 1006 },
+                { "label": "Chennai", "id": 1007 },
+                { "label": "Ahmedabad", "id": 1008 },
+                { "label": "Bhopal", "id": 1009 },
+                { "label": "Bhuvaneshwar", "id": 1010 },
+                { "label": "Chandigarh", "id": 1011 },
+                { "label": "Cuttack", "id": 1012 },
+                { "label": "Guwahati", "id": 1013 },
+                { "label": "Goa", "id": 1014 },
+                { "label": "Howrah", "id": 1015 },
+                { "label": "Jaipur", "id": 1016 },
+                { "label": "Mysore", "id": 1017 },
+                { "label": "Patna", "id": 1018 },
+                { "label": "Surat", "id": 1019 },
+                { "label": "Siliguri", "id": 1020 },
+                { "label": "Trivandram", "id": 1021 },
+                { "label": "Vadodara", "id": 1022 }
+            ]
+        },
+        {
+            "label": "Asia", "id": 2000,
+            "children": [
+                { "label": "China", "id": 2001 },
+                { "label": "Malaysia", "id": 2002 },
+                { "label": "Middle East", "id": 2003 },
+                { "label": "HongKong", "id": 2004 },
+                { "label": "Singapore", "id": 2005 }
+            ]
+        },
+        {
+            "label": "Europe", "id": 3000,
+            "children": [
+                { "label": "France", "id": 3001 },
+                { "label": "Spain", "id": 3002 },
+                { "label": "Switzerland", "id": 3003 },
+                { "label": "UK", "id": 3004 }
+            ]
+        },
+        {
+            "label": "Africa", "id": 4000,
+            "children": [
+                { "label": "South Africa", "id": 4001 }
+            ]
+        },
+        {
+            "label": "Australia", "id": 5000,
+            "children": [
+                { "label": "Australia", "id": 5001 },
+                { "label": "New Zealand", "id": 5002 }
+
+            ]
+        },
+        {
+            "label": "America", "id": 6000,
+            "children": [
+                { "label": "Brazil", "id": 6001 },
+                { "label": "Mexico", "id": 6002 },
+                { "label": "USA", "id": 6003 }
+
+            ]
+        }
+
+    ]
+}
+

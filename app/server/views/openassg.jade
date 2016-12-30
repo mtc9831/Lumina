@@ -1,0 +1,58 @@
+doctype
+html
+  head
+    title Sample Assignments
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width,user-scalable=yes')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='Content/Site.css', type='text/css')
+    link(rel='stylesheet', href='vendor/bootstrap.css', type='text/css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+  body
+    .container-fluid
+        .row
+            .span10
+                .well
+                    h2 Sample Assignments Section
+                    p Assignments are meant to be solved at leisure time. Each assignment is meant to describe certain class of problems. Remembering the results might bring additional competitive advantages.   
+                    - if (interest == 'ENGINEERING')
+                        h4 [Samples]: Engineering Entrance Examination
+                        h4 Mathematics Assignments
+                        h6      Assignments 1 - Mathematics Aptitude Assignment (Level 1) 
+                                a(href='/sampleassignment?assgname=MATH_APT_ASSG_0001') MATH_APT_ASSG_0001  
+                        h4 Physics Assignments
+                        h4 Chemistry Assignments
+                    - else if (interest == 'MEDICAL')
+                        h4 [Samples]: Medical Entrance Examination
+                        h4 Biology Assignments
+                        h4 Physics Assignments
+                        h4 Chemistry Assignments
+                    - else if ((interest == 'TOEFL') || (interest == 'IELTS'))
+                        h4 [Samples]: TOEFL / IELTS Examination
+                        h4 English Assignments
+                    - else if (interest == 'GRE')
+                        h4 [Samples]: GRE Examination
+                        h6      Assignment 1 - Mathematics Aptitude Assignment (Level 1) 
+                                a(href='/sampleassignment?assgname=MATH_APT_ASSG_0001') MATH_APT_ASSG_0001 
+                    - else if (interest == 'GMAT')
+                        h4 [Samples]: GMAT Examination
+                        h6      Assignments 1 - Mathematics Aptitude Assignment (Level 1) 
+                                a(href='/sampleassignment?assgname=MATH_APT_ASSG_0001') MATH_APT_ASSG_0001  
+                    - else if (interest == 'SAT')
+                        h4 [Samples]: SAT Examination
+                        h6      Assignments 1 - Mathematics Aptitude Assignment (Level 1) 
+                                a(href='/sampleassignment?assgname=MATH_APT_ASSG_0001') MATH_APT_ASSG_0001 
+                    - else if (interest == 'BOARD10')
+                        h4 [Samples]: Board Examination - Level 10
+                        h4 Science Assignments
+                        h4 Mathematics Assignments
+                    - else if (interest == 'BOARD12')
+                        h4 [Samples]: Board Examination - Level 10 + 2
+                        h6      Assignments 1 - Mathematics Aptitude Assignment (Level 1) 
+                                a(href='/sampleassignment?assgname=MATH_APT_ASSG_0001') MATH_APT_ASSG_0001
+                        h4 Physics Assignments
+                        h4 Chemistry Assignments
+                        h4 Mathematics Assignments
+                        h4 Biology Assignments
+                    p(style='color:#BB0000')  Note: More samples will be put in this area over next few days. Please visit later.        
+- interest = typeof(interest) != 'undefined' ? interest : { }
