@@ -1,7 +1,6 @@
 {
   "name": "lumina",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "formidable": "^1.0.17",
@@ -28,5 +27,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "KriptoLumen Technologies LLP",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
