@@ -27,7 +27,7 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main":"app.js"
+  "main":"app.js",
   "author": "KriptoLumen Technologies LLP",
   "license": "ISC",
   "description": ""
